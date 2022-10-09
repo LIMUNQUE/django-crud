@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Home</h1>
-    {% lorem 10 b random %}
+    <section class="card card-body">
+        <h1>Django App</h1>
+        {% lorem 5 b random %}
+
+        <div class="text-center">
+            <a href="/signin.html/" class="btn btn-primary">Signin</a>
+            <a href="/signout.html/" class="btn btn-primary">Signout</a>
+        </div>
+    </section>
 {% endblock content %}
